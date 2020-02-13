@@ -7,12 +7,9 @@ task :console do
   Pry.start
 end
 
-begin
-  require 'minitest/autorun'
-rescue LoadError => e
-  raise e unless ENV['RAILS_ENV'] == "production"
-end
 
 def reload
   load_all 'app/models'
 end
+
+

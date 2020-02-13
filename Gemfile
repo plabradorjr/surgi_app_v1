@@ -7,8 +7,7 @@ gem "activerecord", '<= 5.1'
 gem "sinatra-activerecord"
 gem "bcrypt"
 gem "require_all"
-gem "capybara"
-gem 'pg'
+gem 'rack-timeout', '0.3.2'
 
 group :development do
   gem 'sqlite3', '~> 1.3.6'
