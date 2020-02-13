@@ -8,6 +8,7 @@ gem "sinatra-activerecord"
 gem "bcrypt"
 gem "require_all"
 gem "capybara"
+gem 'pg'
 
 group :development do
   gem 'sqlite3', '~> 1.3.6'
