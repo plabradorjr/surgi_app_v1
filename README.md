@@ -1,6 +1,4 @@
-# 🏩 SurgiApp v0.0.1
-
-This is a Flatiron School Project on the topics of Sinatra and ActiveRecord.
+# 🏩 SurgiApp v1.0
 
 ## What is it?
 
