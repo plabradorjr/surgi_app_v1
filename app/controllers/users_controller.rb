@@ -13,7 +13,10 @@ class UsersController < ApplicationController
     # downcase_email = params[:email].downcase
     username_taken = User.find_by(:username => downcase_name)
     # email_taken = User.find_by(:email => downcase_email)
-    if username_taken
+    if params[:invite_code] != "Lurie2020"
+        @error_message = "Sorry, invite-code not valid."
+        erb :'/users/error_message'
+    elsif username_taken
         @error_message = "Sorry, that username is already taken."
         erb :'/users/error_message'
     # elsif email_taken
